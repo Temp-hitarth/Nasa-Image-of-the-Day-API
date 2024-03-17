@@ -1,5 +1,19 @@
 console.log("test");
+// var collectedDate;
+//  function collectDate() {
+//         // Get the value entered in the date input field
+//         var enteredDate = document.getElementById('dateInput').value;
+//         collectedDate = enteredDate;
 
+//         // test
+//         console.log("Collected Date:", collectedDate); 
+//         event.preventDefault();
+//         getData();
+//  }
+
+
+// console.log("Collected Date:", collectedDate);
+// ${collectDate};
 // async await
 async function getData() {
     try {
@@ -9,7 +23,7 @@ async function getData() {
         // x = data fetched from server
         const x = await foobar.json();
 
-        // console.log(x);
+        console.log(x);
         // console.log(x.date);
 
         const content = document.querySelector("#pic");

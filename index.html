@@ -9,6 +9,16 @@
 <body>
     <h1>NASA image of the day</h1>
     <div id="pic">hello world</div>
+
+    <p>Want to see a diffrent image of the day?</p>
+    
+    <!-- date input form -->
+    <form>
+        <label for="dateInput">Enter Date (yyyy/mm/dd):</label>
+        <input type="text" id="dateInput" name="dateInput" pattern="\d{4}/\d{2}/\d{2}" placeholder="YYYY-MM-DD" required>
+
+        <button type="submit" onclick="collectDate()">Submit</button>
+    </form>
     <script src="main.js"></script>
 </body>
 </html>
