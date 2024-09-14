@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rest API Assignment</title>
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+
+    <!-- external stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>NASA image of the day</h1>
-    <div id="pic">hello world</div>
+    <div>
+        <h1>NASA image of the day</h1>
+        <div id="pic" class="fade-in">hello world</div>
 
-    <p>Want to see a diffrent image of the day?</p>
-    
-    <!-- date input form -->
-    <form>
-        <label for="dateInput">Enter Date (yyyy/mm/dd):</label>
-        <input type="text" id="dateInput" name="dateInput" pattern="\d{4}/\d{2}/\d{2}" placeholder="YYYY-MM-DD" required>
+        <p>Want to see a diffrent image of the day?</p>
 
-        <button type="submit" onclick="collectDate()">Submit</button>
-    </form>
+        <div id="display">Selected date:</div>
+        <input type="date" id="dateInput" />
+        
+        <button onclick="changeDate()">Go</button>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
